@@ -1,0 +1,275 @@
+%------------------------
+% Resume Template
+% Author : Ankit Rana
+% Github : https://github.com/anartikna
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage[]{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{textcomp}
+\usepackage{fixltx2e}
+\usepackage{url}
+\usepackage{fontawesome}
+
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\publication}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\extracurricular}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+%-------THIS DETERMINES THE HEADINGS STYLING
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\sisetup{math-micro=\text{µ},text-micro=µ}
+
+\fancyhf{}
+\cfoot{\thepage}
+\pagestyle{fancy} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+{\Huge Ankit Rana}\par\bigskip
+\begin{minipage}[b]{0.33333\textwidth}
+\raggedright
+\faMapMarker {~~Santa Cruz, CA} \par
+\faLinkedin {~~linkedin.com/in/ranaat/}
+\end{minipage}%
+\begin{minipage}[b]{0.33333\textwidth}
+\centering
+\faEnvelope {~~ankit.rana@ontera.bio} \par
+\faPhone {~~+1-513-886-8753}
+\end{minipage}%
+\begin{minipage}[b]{0.33333\textwidth}
+\raggedleft
+\faGlobe {~~ranaankit.com/} \par
+\faGithub  {~~github.com/anartikna}
+\end{minipage}
+\end{center}
+
+\vspace{5pt}
+%----------PROFESSIONAL EXPERIENCE SECTION-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Ontera, Inc.}{Santa Cruz, CA}
+    {R\&D Engineer}{Mar 2018 - Present}
+    \resumeItemListStart [leftmargin=*]
+        \resumeItem{Nanofabrication}
+          {Photolithography, plasma bonding \& wet-etching in the fabrication of the dual nanopore chip.}
+          \resumeItem{Experimentation}
+          {Assembly of the microfluidic dual nanopore device; design of Experiments (DOE) and data analysis using MATLAB around the two-pore control (Epigenetics application).}
+          \resumeItem{Controller Design}{Development of LabVIEW FPGA control for DNA linearization and bidirectional ‘flossing’ and re-capture of detected single molecules.}
+          \resumeItem{Inventory and Quality Control}{Conducting optical QC of the fabricated nanopore chips, dicing of the wafer post-fab, electrical failure detection of pores, microfluidic-strip fault analysis, Agarose gel electrophoresis and imaging}
+      \resumeItemListEnd
+
+    \resumeSubheading
+		{Aricent Inc. (Now Altran Group)}{Gurugram, HY}
+		{Software Engineer}{Dec 2013 -  Jul 2015}
+		\resumeItemListStart [leftmargin=*]
+        \resumeItem{BluWAN EMS - Ethernet Switch Configuration Solution}
+          {Formulated the front-end UI design with HTML, CSS, and AngularJS and back-end servlets in Java for an EMS solution (SNMP configuration).}
+        \resumeItem{Mantu - Secure Enterprise Chat Application}
+          {Part of a 2 member server-team. Engineered modules for UI Interface at the Ejabberd XMPP server, OTP generation, SSL verification and file storage in Erlang.}
+		\resumeItemListEnd
+		
+	\resumeSubheading
+		{Evalueserve, Inc.}{Gurugram, HY}
+		{Research Associate Intern}{Jun 2013 - Aug 2013}
+		\resumeItemListStart [leftmargin=*]
+        \publication{Conducted patentability search, designed claim-charts, inspected patent litigation, and drafted new patents for a Fortune 100 consumer electronics manufacturer.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College of Engineering and Applied Science, University of Cincinnati}{Cincinnati, OH}
+      {Master of Science in Electrical Engineering;  GPA: 3.95}{Aug 2015 - Dec 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} A study of electrokinetics in glass nanopores for biomolecular applications. \bf {Adviser:}}Dr. Leyla Esfandiari}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Biomedical Microsystems, Microfabrication of Semiconductor Devices, Microelectromechanical Systems, Biochip/Lab-on-a-Chip, Bio-microfluidics.}}}
+       \resumeSubheading
+      {Guru Gobind Singh Indraprastha University}{New Delhi, DL}
+      {Bachelor of Technology in Electronics and Communication Engineering;  GPA: 80.1}{Aug 2009 - May 2013}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Programming in C, Database Management Systems (SQLite), Embedded Systems, Circuits \& Systems, Analog and Digital Electronics, VLSI Design.}}}
+      
+       \resumeSubheading
+      {Massive Online Open Courses (MooC) certifications}{Online}
+      {edX \& Coursera}{}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Key Courses:} Python for Everybody (UMich)-Coursera, Data Structures in Python(Coursera), Linux – edX (Linux Foundation), Descriptive Statistics – edX (UC Berkeley), Introduction to Computing technology inside your smartphone – edX (Cornell University),Embedded Systems – edX (UT Austin) \& Fundamentals of Nano-electronics – edX (Purdue University)}}}
+    \resumeSubHeadingListEnd
+	 
+%-----------skills section-----------------	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\vspace{2pt}
+	\resumeSubItem{Platforms}{Linux, Windows, 8051\si{\micro C}, Arduino, Raspberry Pi.}
+	\vspace{2pt}
+	\resumeSubItem{Programming languages}{Python, Java, C, C++, Erlang, JavaScript, Git, SQLite, AngularJS, HTML, CSS.}
+	\vspace{2pt}
+	\resumeSubItem{Fabrication and metrology}{Mask design, Photolithography, Wet etching, Reactive Ion etching (RIE), Soft Lithography, Fluorescent and confocal microscopy, CO\textsubscript{2} laser pulling, Plasma bonding, Spectroscopy (Ellipsometry), SEM.}
+	\vspace{2pt}
+	\resumeSubItem{Molecular biology}{Protein tagging
+of DNA molecules, Agarose Gel Electrophoresis, Polymerase Chain Reaction (qPCR), Dynamic light scattering (DLS), Microparticles conjugation (Surface chemistry), Nanodrop, Spectrophotometry.}
+\vspace{2pt}
+	\resumeSubItem{Design tools}{MATLAB, COMSOL Multiphysics, CFD-GEOM \& Ace+, SolidWorks, AutoCAD, ANSYS Fluent, LabVIEW, Adobe Design Suite.}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+
+%-----------academic experience -----------------
+\section{Academic Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {Research Assistant, Integrative Biosensing Laboratory, U of Cincinnati}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Jan 2016 - Feb 2018}\\
+      \vspace{10pt}
+      {\textbf {\textit{Design and optimization of a Nanopore-based biosensor for sequence-specific nucleic acid detection.}}}{}
+      \begin{itemize}[leftmargin=*]
+      \vspace{-5pt}
+      \setlength\itemsep{-0.1em}
+        \item Developed a 97\%  efficient binary biosensor for quantitative estimation of the impact of electro-osmotic force.
+         \item Impact of buffer concentration, field strength \& surface charges on the electrokinetics was studied with FEA.
+         \item Successfully detected microRNA (miR-204 AND miR-210) related to clear cell renal cell carcinoma.
+        \end{itemize}
+       {\textbf{\textit {A Dielectrophoresis based Microfluidic device for Exosome isolation.}}}{}
+        \begin{itemize}[leftmargin=*]
+        \vspace{-5pt}
+      \setlength\itemsep{-0.1em}
+        \item Fabricated a particle isolator device in PDMS with a borosilicate pore as the collection zone using soft-lithography.
+         \item Size selective trapping of exosomes from a matrix was demonstrated.
+        \end{itemize}
+        {\textbf {\textit{Microfabrication and characterization of a Piezo-resistive Pressure Sensor (MEMS).}}}{}
+        \begin{itemize}[leftmargin=*]
+        \vspace{-5pt}
+      \setlength\itemsep{-0.1em}
+        \item Microfabricated a pressure sensor prototype based on Wheatstone bridge arrangement on a 6” Silicon-wafer using photolithography and wet-etching techniques.
+         \item Efficiency, hysteresis analysis, and linearity of the device were studied.
+        \end{itemize}
+    \resumeSubHeadingListEnd
+    
+    \resumeSubHeadingListStart
+    \resumeSubItem
+      {Teaching Assistant, Electrical Engg. \& Computer Science, U of Cincinnati}
+      {~~~~~~~~~~~~~~~~~~~~~~~~~~Aug 2016 - May 2017}
+      \vspace{5pt}
+      \begin{itemize}[leftmargin=*]
+      \vspace{-5pt}
+      \setlength\itemsep{-0.1em}
+        \item Designed and taught the class, ‘Biomicrofluidic Systems (laboratory) - EECE6078C’ encompassing COMSOL Multiphysics based FEA analysis and clean-room fabrication of active and passive microfluidic devices.
+         \item Assisted students with review sessions in the class, ‘Biomedical Microsystems - EECE6007’, graded assignments.
+        \end{itemize}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Recent Publications \& Presentations}
+\resumeSubHeadingListStart
+\publication{Liu, X., Zimny, P., Zhang, Y., Rana, A., Nagel, R., Reisner, W., \& Dunbar, W. B. (2019). \textit{\textbf{Flossing DNA in a Dual Nanopore Device.}} Small, 1905379.}
+\vspace{-5pt}
+\publication{Rana, A., Zhang, Y. and Esfandiari, L., 2018. \textit{\textbf{Advancements in microfluidic technologies for isolation and early detection of circulating cancer-related biomarkers}}, Analyst.}
+\vspace{-5pt}
+
+\publication{Shi, L., Rana, A. and Esfandiari, L., 2018. \textit{\textbf{A low voltage nanopipette dielectrophoretic device for rapid entrapment of nanoparticles and exosomes extracted from plasma of healthy donors}}, Scientific reports (Nature).}
+\vspace{-5pt}
+\publication{Zhang, Y., Rana, A., Stratton, Y., Czyzyk-Krzeska, M.F. and Esfandiari, L., 2017.\textit{\textbf{ Sequence-Specific Detection of MicroRNAs Related to Clear Cell Renal Cell Carcinoma at fM Concentration by an Electroosmotically Driven Nanopore-Based Device}}, Analytical chemistry, 89(17), pp.9201-9208.}
+\vspace{-5pt}
+\publication{Poster: \textit{\textbf{A dielectrophoretic nanopore device with spatiotemporal resolution for microvesicles entrapment and quantification near living cells}}, The International Society for Extracellular Vesicles conf., May 2017, Toronto, ON.}
+\vspace{-5pt}
+\publication{Poster: \textit{\textbf{Impact of Electro-osmotic force in governing the motion of a charged species in a microfluidics based nanopore sensor}}, presented at Center for Advanced Design and Manufacturing of Integrated Microfluidics (CADMIM) – Industrial Advisory Board meeting, September 7, 2016, University of Cincinnati, OH.}
+\vspace{-5pt}
+\publication{Ghobadi, M., Zhang, Y., Rana, A., Esfahani, E.T. and Esfandiari, L., 2016, August. \textit{\textbf{Quantitative estimation of electro-osmosis force on charged particles inside a borosilicate resistive-pulse sensor}}, Engineering in Medicine and Biology Society (EMBC), 2016 IEEE 38th Annual International Conference of the (pp. 4228-4231). IEEE.}
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+%-----------LEADERSHIP ROLES, COMMUNITY ACTIVITIES AND AWARDS-----------------
+\section{Leadership Roles, Community Activities \& Awards}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+    {Save Our Shores - Beach Cleanup Drives}{Santa Cruz, CA}
+    {Supporting the foundations of a thriving Monterey Bay: clean shores \& healthy habitats.}{Summer and Fall 2019}
+\resumeSubheading
+    {Clean Up Cincy}{Cincinnati, OH}
+    {Cincinnati's largest student-led clean up program.}{Spring and Fall 2016}
+    
+	\resumeSubheading
+    {University Graduate Scholarship (UGS) recipient}{Cincinnati, OH}
+    {Partial tuition waiver awarded based on academic performance.}{Aug 2015 – Feb 2018}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {VP (Communications), The Techno-mentorship Establishment at UC}{Cincinnati, OH}
+    {A platform to help students accomplish their entrepreneurial goals.}{May 2016 - May 2017}
+\resumeSubHeadingListEnd
+\end{document}
